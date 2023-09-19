@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-18T17:12:15 IST" name="Default suite" finished-at="2023-09-18T17:14:25 IST" duration-ms="130318">
+    <groups>
+    </groups>
+    <test started-at="2023-09-18T17:12:15 IST" name="Default test" finished-at="2023-09-18T17:14:25 IST" duration-ms="130318">
+      <class name="healthApp.HealthChat">
+        <test-method is-config="true" signature="setup()[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:12:15 IST" name="setup" finished-at="2023-09-18T17:12:36 IST" duration-ms="21183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="NumberField()[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:12:36 IST" name="NumberField" finished-at="2023-09-18T17:12:48 IST" duration-ms="11695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NumberField -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:12:48 IST" name="screenShot" finished-at="2023-09-18T17:12:48 IST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NumberField status=SUCCESS method=HealthLogin.NumberField()[pri:0, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="IAgree()[pri:1, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:12:48 IST" name="IAgree" finished-at="2023-09-18T17:12:50 IST" duration-ms="2165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IAgree -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:12:50 IST" name="screenShot" finished-at="2023-09-18T17:12:50 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=IAgree status=SUCCESS method=HealthLogin.IAgree()[pri:1, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="proceedButton()[pri:2, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:12:50 IST" name="proceedButton" finished-at="2023-09-18T17:12:55 IST" duration-ms="5336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedButton -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:12:55 IST" name="screenShot" finished-at="2023-09-18T17:12:55 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=proceedButton status=SUCCESS method=HealthLogin.proceedButton()[pri:2, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="OTP()[pri:3, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:12:55 IST" name="OTP" finished-at="2023-09-18T17:13:13 IST" duration-ms="17203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OTP -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:13 IST" name="screenShot" finished-at="2023-09-18T17:13:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OTP status=SUCCESS method=HealthLogin.OTP()[pri:3, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Verify()[pri:4, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:13 IST" name="Verify" finished-at="2023-09-18T17:13:15 IST" duration-ms="2686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:15 IST" name="screenShot" finished-at="2023-09-18T17:13:15 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify status=SUCCESS method=HealthLogin.Verify()[pri:4, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="Chats()[pri:5, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:15 IST" name="Chats" finished-at="2023-09-18T17:13:25 IST" duration-ms="9448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Chats -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:25 IST" name="screenShot" finished-at="2023-09-18T17:13:25 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Chats status=SUCCESS method=HealthChat.Chats()[pri:5, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="SelectFamilyMember()[pri:6, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:25 IST" name="SelectFamilyMember" finished-at="2023-09-18T17:13:32 IST" duration-ms="7458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectFamilyMember -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:32 IST" name="screenShot" finished-at="2023-09-18T17:13:32 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SelectFamilyMember status=SUCCESS method=HealthChat.SelectFamilyMember()[pri:6, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="clickCamera()[pri:7, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:32 IST" name="clickCamera" finished-at="2023-09-18T17:13:40 IST" duration-ms="7352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCamera -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:40 IST" name="screenShot" finished-at="2023-09-18T17:13:40 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCamera status=SUCCESS method=HealthChat.clickCamera()[pri:7, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="CameraAllow()[pri:8, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:40 IST" name="CameraAllow" finished-at="2023-09-18T17:13:47 IST" duration-ms="7251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CameraAllow -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:47 IST" name="screenShot" finished-at="2023-09-18T17:13:47 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CameraAllow status=SUCCESS method=HealthChat.CameraAllow()[pri:8, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="CameraAllow1()[pri:9, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:47 IST" name="CameraAllow1" finished-at="2023-09-18T17:13:54 IST" duration-ms="7292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CameraAllow1 -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:54 IST" name="screenShot" finished-at="2023-09-18T17:13:54 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CameraAllow1 status=SUCCESS method=HealthChat.CameraAllow1()[pri:9, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="CameraClick()[pri:10, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:13:54 IST" name="CameraClick" finished-at="2023-09-18T17:14:02 IST" duration-ms="8135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CameraClick -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:14:02 IST" name="screenShot" finished-at="2023-09-18T17:14:02 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CameraClick status=SUCCESS method=HealthChat.CameraClick()[pri:10, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="OkClick()[pri:11, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:14:02 IST" name="OkClick" finished-at="2023-09-18T17:14:10 IST" duration-ms="7302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OkClick -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:14:10 IST" name="screenShot" finished-at="2023-09-18T17:14:10 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OkClick status=SUCCESS method=HealthChat.OkClick()[pri:11, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="TypeMessage()[pri:13, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:14:10 IST" name="TypeMessage" finished-at="2023-09-18T17:14:18 IST" duration-ms="7997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TypeMessage -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:14:18 IST" name="screenShot" finished-at="2023-09-18T17:14:18 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TypeMessage status=SUCCESS method=HealthChat.TypeMessage()[pri:13, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method signature="SendButton()[pri:14, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:14:18 IST" name="SendButton" finished-at="2023-09-18T17:14:25 IST" duration-ms="7516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendButton -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:healthApp.HealthChat@68c9133c]" started-at="2023-09-18T17:14:25 IST" name="screenShot" finished-at="2023-09-18T17:14:25 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SendButton status=SUCCESS method=HealthChat.SendButton()[pri:14, instance:healthApp.HealthChat@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- healthApp.HealthChat -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
