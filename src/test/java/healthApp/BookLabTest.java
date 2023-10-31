@@ -232,22 +232,26 @@ public void VaccineLabel() throws InterruptedException, IndexOutOfBoundsExceptio
 
 	Thread.sleep(2000);
 
-	WebElement Submit = driver.findElement(By.xpath("//*[@text='Submit']"));
-	Submit.click();
+	/*
+	 * WebElement Submit = driver.findElement(By.xpath("//*[@text='Submit']"));
+	 * Submit.click();
+	 */
 
 }
-@Test(priority = 12)
-public void BookLabTest1() throws MalformedURLException, InterruptedException {
-	
 
-	List<WebElement> BookLabTest1 =driver.findElements(By.xpath(
-			"//*[@text='Book Lab Test']"));
-	BookLabTest1.get(1).click();
 
-	
-	  Thread.sleep(5000);
-
-}
+  @Test(priority = 12) public void BookLabTest1() throws MalformedURLException,
+  InterruptedException {
+  
+  
+  List<WebElement> BookLabTest1 =driver.findElements(By.xpath(
+  "//*[@text='Book Lab Test']")); BookLabTest1.get(1).click();
+  
+  
+  Thread.sleep(5000);
+  
+  }
+ 
 @Test(priority = 13)
 public void Done() throws MalformedURLException, InterruptedException {
 	

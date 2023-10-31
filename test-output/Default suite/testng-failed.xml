@@ -3,13 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="healthApp.HealthChat">
+      <class name="pivotalApplication.PivoFin2">
         <methods>
-          <include name="Gallery"/>
-          <include name="setup"/>
+          <include name="CreatedBy"/>
+          <include name="UploadCam"/>
+          <include name="UploadDocuments"/>
+          <include name="UploadOk"/>
+          <include name="DischargeSummary"/>
           <include name="screenShot"/>
+          <include name="Camera"/>
+          <include name="popUpOk"/>
+          <include name="setup"/>
+          <include name="Upload"/>
+          <include name="UploadCamOk"/>
         </methods>
-      </class> <!-- healthApp.HealthChat -->
+      </class> <!-- pivotalApplication.PivoFin2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

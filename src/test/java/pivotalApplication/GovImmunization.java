@@ -1,5 +1,7 @@
 package pivotalApplication;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -11,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -22,6 +25,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 public class GovImmunization {
 	AppiumDriver driver;
 	public Object MobileElement;
+	public static String mobileNumber = "//android.widget.TextView[@text='Cancel']";
 
 	@BeforeClass
 	public void setup() throws MalformedURLException, InterruptedException {
@@ -97,7 +101,7 @@ public class GovImmunization {
 		Thread.sleep(2000);
 
 		WebElement SearchBar = driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-		SearchBar.sendKeys("PivoTotal33Automation                                                                                                                                                                                                                                                                       ");
+		SearchBar.sendKeys("check1                                                                                                                                                                                                                                                                      ");
 
 		Thread.sleep(2000);
 		WebElement SearchIcon1 = driver.findElement(
@@ -134,18 +138,44 @@ public class GovImmunization {
 	}
 	
 	  @Test(priority = 10) public void BulkCancel() throws InterruptedException,
-	  IndexOutOfBoundsException { Thread.sleep(5000); WebElement BulkCancel =
-	  driver.findElement(By.xpath("//*[@text='Cancel']")); BulkCancel.click();
+				IndexOutOfBoundsException {
+			Thread.sleep(5000);/*
+								 * WebElement BulkCancel = driver.findElement(By.xpath("//*[@text='Cancel']"));
+								 * BulkCancel.click();
+								 */
+	  
+			String bname1 = driver.findElement(By.xpath("//*[@text='Cancel']")).getText();
+			System.out.println(bname1);
+			  Assert.assertEquals(bname1,"Cancel");	
+			  //System.out.println(bname1);
+String x="Cancel";
+	  if(bname1.equals(x))	{  
+	/* // WebElement BulkCancel =
+	  driver.findElement(By.xpath("//*[@text='Cancel']")); 
+		  mobileNumber.click();}else {
+		  WebElement opvO = driver.findElement(By.xpath("//*[@text='OPV-0']"));
+			opvO.click();
+	  }*/
+	  
+		
+	  // WebElement BulkCancel =
+	  driver.findElement(By.xpath("//*[@text='Cancel']")).click();}
+	  
+	  else if (!bname1.equals(x)){
+		  System.out.println("Cancel not found");
+	  }
+	  }
+	 
 	 
 
-}
-	@Test(priority = 11)
-	public void opvO() throws InterruptedException, IndexOutOfBoundsException {
-		Thread.sleep(2000);
-		WebElement opvO = driver.findElement(By.xpath("//*[@text='OPV-0']"));
-		opvO.click();
 
-	}
+		
+		  @Test(priority = 11) public void opvO() throws InterruptedException,
+		  IndexOutOfBoundsException { Thread.sleep(2000); WebElement opvO =
+		  driver.findElement(By.xpath("//*[@text='OPV-0']")); opvO.click();
+		  
+		  }
+		 
 	@Test(priority = 12)
 	public void SaveVaccine() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
@@ -330,7 +360,7 @@ public class GovImmunization {
 	@Test(priority = 29)
 	public void photo() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(10000);
-	 driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"Screenshot_20230807-103653_Gallery.jpg, 680 kB, 7 Aug\"]")).click();
+	 driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"Screenshot_20230921-114316_Gallery.jpg, 704 kB, 21 Sep\"]")).click();
 
 		
 

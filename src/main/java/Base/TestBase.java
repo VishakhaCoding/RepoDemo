@@ -1,7 +1,8 @@
 
   package Base;
   
-  import java.io.File; import java.io.FileInputStream; import
+  import java.io.File; import java.io.FileInputStream; 
+import
   java.io.FileNotFoundException; import java.io.IOException; import
   java.util.Properties; import java.util.concurrent.TimeUnit;
   
@@ -13,6 +14,7 @@
   org.openqa.selenium.support.events.EventFiringWebDriver; import
   org.testng.ITestResult; import org.testng.annotations.AfterMethod; import
   org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
   
   public class TestBase { public static WebDriver driver; public static
   Properties prop; public static EventFiringWebDriver e_driver; public static
@@ -28,14 +30,14 @@
   e) { e.printStackTrace(); } }
   
   
-  
+  @Test(priority=0)
   @BeforeClass public static void initialization() throws IOException { String
   browserName = prop.getProperty("browser");
   
   if (browserName.equals("chrome")) {
   
   System.setProperty("webdriver.chrome.driver",
-  ".//src//test//resources//Browser//chromedriver.exe");
+  "C:\\Users\\Lenovo\\Desktop\\PracticeHealth\\src\\test\\resources\\Browser\\chromedriver.exe");
   
   driver = new ChromeDriver();
   

@@ -5,6 +5,7 @@
     <classes>
       <class name="webAuto.OpdEndToEndWorkFlow1"/>
        <class name="webAuto.OPDEndToEndWorkFlow2"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

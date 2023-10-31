@@ -23,6 +23,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 public class PivoFin1 {
 	AppiumDriver driver;
 	public Object MobileElement;
+	public static String mobileNumber = "//*[@text='Cancel']";
 
 	@BeforeClass
 	public void setup() throws MalformedURLException, InterruptedException {
@@ -43,7 +44,7 @@ public class PivoFin1 {
 		Thread.sleep(5000);
 
 	}
-
+	
 	@Test(priority = 0)
 	public void NumberField() throws MalformedURLException, InterruptedException {
 		WebElement Number = driver.findElement(By.xpath(
@@ -136,7 +137,7 @@ public class PivoFin1 {
 		Thread.sleep(2000);
 
 		WebElement MobileNumber1 = driver.findElement(By.xpath("//*[@text='Mobile Number']"));
-		MobileNumber1.sendKeys("1000000033");
+		MobileNumber1.sendKeys("1000000034");
 
 	}
 
@@ -181,7 +182,7 @@ public class PivoFin1 {
 		Thread.sleep(2000);
 
 		WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-		FirstName.sendKeys("PivoTotal40Automation");
+		FirstName.sendKeys("PivoTotal72Automation");
 
 		Thread.sleep(2000);
 
@@ -723,6 +724,7 @@ public class PivoFin1 {
 	 */
 	@Test(priority = 70)
 	public void BloodSugar() throws InterruptedException {
+		Thread.sleep(5000);
 
 		List<WebElement> BloodSugar = driver.findElements(By.className("android.widget.EditText"));
 		BloodSugar.get(0).sendKeys("120");
@@ -762,6 +764,8 @@ public class PivoFin1 {
 
 		List<WebElement> LipidArrowDown = driver.findElements(By.className("android.widget.TextView"));
 		LipidArrowDown.get(29).click();
+
+		Thread.sleep(5000);
 	}
 
 	@Test(priority = 74)
@@ -1340,7 +1344,7 @@ public class PivoFin1 {
 		WebElement CameraClick = driver.findElement(By.xpath("//CenterButtonGroup[@content-desc=\"NONE\"]"));
 		CameraClick.click();
 
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 
 		WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
 		UploadOk.click();
@@ -1504,7 +1508,7 @@ public class PivoFin1 {
 	public void GallariesPhoto() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(
-				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20230807-103653_Gallery.jpg, 680 kB, 7 Aug\"]"))
+				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20230921-114316_Gallery.jpg, 704 kB, 21 Sep\"]"))
 				.click();
 
 		Thread.sleep(5000);
@@ -1605,20 +1609,26 @@ public class PivoFin1 {
 
 	}
 
-	/*
-	 * @Test(priority = 150) public void BulkCancel() throws InterruptedException,
-	 * IndexOutOfBoundsException { Thread.sleep(5000); WebElement BulkCancel =
-	 * driver.findElement(By.xpath("//*[@text='Cancel']")); BulkCancel.click();
-	 * 
-	 * }
-	 */
-	@Test(priority = 151)
-	public void opvO() throws InterruptedException, IndexOutOfBoundsException {
-		Thread.sleep(2000);
-		WebElement opvO = driver.findElement(By.xpath("//*[@text='OPV-0']"));
-		opvO.click();
-
-	}
+	
+	  @Test(priority = 150) public void BulkCancel() throws InterruptedException,
+	  IndexOutOfBoundsException { Thread.sleep(5000); 
+	
+	  
+		
+	  
+		  WebElement BulkCancel = driver.findElement(By.xpath("//*[@text='Cancel']"));
+		  BulkCancel.click();
+		 
+	
+	  }
+	 
+		
+		  @Test(priority = 151) public void opvO() throws InterruptedException,
+		  IndexOutOfBoundsException { Thread.sleep(2000); WebElement opvO =
+		  driver.findElement(By.xpath("//*[@text='OPV-0']")); opvO.click();
+		  
+		  }
+		 
 
 	@Test(priority = 152)
 	public void SaveVaccine() throws InterruptedException, IndexOutOfBoundsException {
@@ -1791,7 +1801,7 @@ public class PivoFin1 {
 	public void photo() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(10000);
 		driver.findElement(By.xpath(
-				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20230807-103653_Gallery.jpg, 680 kB, 7 Aug\"]"))
+				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20230921-114316_Gallery.jpg, 704 kB, 21 Sep\"]"))
 				.click();
 
 	}

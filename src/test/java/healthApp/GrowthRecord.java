@@ -51,23 +51,25 @@ public void Vital() throws MalformedURLException, InterruptedException {
 
 	List<WebElement> weight =driver.findElements(By.className(
 			"android.widget.EditText"));
-	weight.get(0).sendKeys("5");
+	weight.get(0).sendKeys("3");
 	
 	List<WebElement> Height =driver.findElements(By.className(
 			"android.widget.EditText"));
-	Height.get(1).sendKeys("100");
+	Height.get(1).sendKeys("50");
 	
 	List<WebElement> HC =driver.findElements(By.className(
 			"android.widget.EditText"));
-	HC.get(2).sendKeys("25");
+	HC.get(2).sendKeys("35");
 	
 	List<WebElement> CC =driver.findElements(By.className(
 			"android.widget.EditText"));
-	CC.get(3).sendKeys("100");
+	CC.get(3).sendKeys("1");
+	
+	 Thread.sleep(15000);
 	
 	
 	List<WebElement> Save =driver.findElements(By.xpath(
-			"//*[@text='Save']"));
+			"//android.widget.TextView[@text='Save']"));
 	Save.get(0).click();
 
 	

@@ -8,6 +8,7 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -22,7 +23,8 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class FreshPrescription {
-	AppiumDriver driver;
+	//public AppiumDriver driver;
+	public static AppiumDriver driver;
 	//public Object MobileElement;
 
 	@BeforeClass
@@ -248,7 +250,8 @@ public void prescription() throws InterruptedException, IndexOutOfBoundsExceptio
   
   }
   
-  @Test(priority=22) public void SearchMedDolo() throws InterruptedException,
+  @Test(priority=22)
+public   void SearchMedDolo() throws InterruptedException,
   IndexOutOfBoundsException{ Thread.sleep(2000);
   List<WebElement> SearchMedDolo =
   driver.findElements(By.className("android.widget.EditText"));

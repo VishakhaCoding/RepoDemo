@@ -3,6 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="webAuto.OPDEndToEndWorkFlow2">
+        <methods>
+          <include name="setUp"/>
+          <include name="screenShot"/>
+          <include name="AllDocuments"/>
+        </methods>
+      </class> <!-- webAuto.OPDEndToEndWorkFlow2 -->
       <class name="webAuto.OpdEndToEndWorkFlow1">
         <methods>
           <include name="setUp"/>

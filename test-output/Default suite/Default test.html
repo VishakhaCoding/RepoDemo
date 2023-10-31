@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>86/9/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 18 17:12:15 IST 2023</td>
+<td>Started on:</td><td>Tue Oct 31 12:39:02 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>130 seconds (130318 ms)</td>
+<tr><td>Total time:</td><td>790 seconds (790154 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,1005 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.DischargeSummary()'><b>DischargeSummary</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Discharge Summary&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.DischargeSummary(PivoFin2.java:547)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2061316668", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2061316668'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Discharge Summary&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.DischargeSummary(PivoFin2.java:547)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Camera()'><b>Camera</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Camera&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.Camera(PivoFin2.java:588)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1699511597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1699511597'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Camera&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.Camera(PivoFin2.java:588)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.UploadCamOk()'><b>UploadCamOk</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;OK&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.UploadCamOk(PivoFin2.java:631)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1302779492", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1302779492'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;OK&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.UploadCamOk(PivoFin2.java:631)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.UploadDocuments()'><b>UploadDocuments</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Upload Documents&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.UploadDocuments(PivoFin2.java:528)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace384283650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace384283650'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Upload Documents&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.UploadDocuments(PivoFin2.java:528)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>40</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.UploadCam()'><b>UploadCam</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Upload&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.UploadCam(PivoFin2.java:624)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1453650546", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1453650546'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Upload&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.UploadCam(PivoFin2.java:624)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Upload()'><b>Upload</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Upload&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.Upload(PivoFin2.java:725)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1648278215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1648278215'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Upload&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.Upload(PivoFin2.java:725)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.popUpOk()'><b>popUpOk</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Ok&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.popUpOk(PivoFin2.java:576)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1043584830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1043584830'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Ok&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.popUpOk(PivoFin2.java:576)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.CreatedBy()'><b>CreatedBy</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Created By&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.CreatedBy(PivoFin2.java:557)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace240959474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace240959474'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;Created By&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.CreatedBy(PivoFin2.java:557)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.UploadOk()'><b>UploadOk</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;OK&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.UploadOk(PivoFin2.java:735)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace759099777", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace759099777'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [25c1d44a-069b-47b4-bce6-0922060e7a3b, findElement {using=xpath, value=//*[@text=&apos;OK&apos;]}]
+Capabilities {appium:app: D:\pivotalapp-20-june.apk, appium:appActivity: com.calculator_apps.MainAct..., appium:appPackage: com.calculator_apps, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\pivotalapp-20-june.apk, appActivity: com.calculator_apps.MainAct..., appPackage: com.calculator_apps, automationName: UiAutomator2, deviceName: samsung, platformName: ANDROID, platformVersion: 10}, appium:deviceApiLevel: 29, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A305F, appium:deviceName: RZ8M5181Y3M, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: RZ8M5181Y3M, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2048, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 25c1d44a-069b-47b4-bce6-0922060e7a3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pivotalApplication.PivoFin2.UploadOk(PivoFin2.java:735)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,75 +1075,435 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='healthApp.HealthChat.CameraAllow()'><b>CameraAllow</b><br>Test class: healthApp.HealthChat</td>
+<td title='pivotalApplication.PivoFin2.ReceiptNo()'><b>ReceiptNo</b><br>Test class: pivotalApplication.PivoFin2</td>
 <td></td>
 <td>7</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
 <tr>
-<td title='healthApp.HealthChat.NumberField()'><b>NumberField</b><br>Test class: healthApp.HealthChat</td>
-<td></td>
-<td>11</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
-<tr>
-<td title='healthApp.HealthChat.Chats()'><b>Chats</b><br>Test class: healthApp.HealthChat</td>
+<td title='pivotalApplication.PivoFin2.Search()'><b>Search</b><br>Test class: pivotalApplication.PivoFin2</td>
 <td></td>
 <td>9</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
 <tr>
-<td title='healthApp.HealthChat.CameraClick()'><b>CameraClick</b><br>Test class: healthApp.HealthChat</td>
-<td></td>
-<td>8</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
-<tr>
-<td title='healthApp.HealthChat.clickCamera()'><b>clickCamera</b><br>Test class: healthApp.HealthChat</td>
-<td></td>
-<td>7</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
-<tr>
-<td title='healthApp.HealthChat.SendButton()'><b>SendButton</b><br>Test class: healthApp.HealthChat</td>
-<td></td>
-<td>7</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
-<tr>
-<td title='healthApp.HealthChat.Verify()'><b>Verify</b><br>Test class: healthApp.HealthChat</td>
-<td></td>
-<td>2</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
-<tr>
-<td title='healthApp.HealthChat.IAgree()'><b>IAgree</b><br>Test class: healthApp.HealthChat</td>
-<td></td>
-<td>2</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
-<tr>
-<td title='healthApp.HealthChat.proceedButton()'><b>proceedButton</b><br>Test class: healthApp.HealthChat</td>
+<td title='pivotalApplication.PivoFin2.UploadDocuments1()'><b>UploadDocuments1</b><br>Test class: pivotalApplication.PivoFin2</td>
 <td></td>
 <td>5</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
 <tr>
-<td title='healthApp.HealthChat.OTP()'><b>OTP</b><br>Test class: healthApp.HealthChat</td>
+<td title='pivotalApplication.PivoFin2.ClickHistory()'><b>ClickHistory</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>6</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.submit()'><b>submit</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>3</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.preview()'><b>preview</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.PayerName()'><b>PayerName</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Gallery()'><b>Gallery</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Speciality1()'><b>Speciality1</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>32</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.packages()'><b>packages</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.UploadCam2()'><b>UploadCam2</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.popUpOk1()'><b>popUpOk1</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.VaccinationOk()'><b>VaccinationOk</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.ClickPatient()'><b>ClickPatient</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.DrName()'><b>DrName</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.DocumentsDropDown()'><b>DocumentsDropDown</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>5</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.SpecialitySelect()'><b>SpecialitySelect</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>37</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Duration()'><b>Duration</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.NumberField()'><b>NumberField</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>1</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.RquisitionDownloadclose()'><b>RquisitionDownloadclose</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.CreatedBy1()'><b>CreatedBy1</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.AdministeredDate()'><b>AdministeredDate</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>5</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.AddNewReceipt()'><b>AddNewReceipt</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>10</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.DocumentOn2()'><b>DocumentOn2</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Reciept()'><b>Reciept</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>18</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.close()'><b>close</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>4</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Submit()'><b>Submit</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.OTP()'><b>OTP</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>10</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.ViewDocument()'><b>ViewDocument</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Vaccination()'><b>Vaccination</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>4</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.popUpOk3()'><b>popUpOk3</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.close4()'><b>close4</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>12</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.CertificateDropdown()'><b>CertificateDropdown</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>22</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Covid19()'><b>Covid19</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>7</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.photo3()'><b>photo3</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>10</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.CertificateType()'><b>CertificateType</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>22</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Addmore()'><b>Addmore</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>4</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Consultation()'><b>Consultation</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>4</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.DrEmail()'><b>DrEmail</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.ViewReceipts()'><b>ViewReceipts</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>16</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Transscript1()'><b>Transscript1</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>5</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.ReportClick()'><b>ReportClick</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.CholeraVaccine()'><b>CholeraVaccine</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.CreatedBy2()'><b>CreatedBy2</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.RffralCreation()'><b>RffralCreation</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.VaccineDropdown()'><b>VaccineDropdown</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Printclose()'><b>Printclose</b><br>Test class: pivotalApplication.PivoFin2</td>
 <td></td>
 <td>17</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
 <tr>
-<td title='healthApp.HealthChat.SelectFamilyMember()'><b>SelectFamilyMember</b><br>Test class: healthApp.HealthChat</td>
+<td title='pivotalApplication.PivoFin2.close2()'><b>close2</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>12</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.DrMobNumber()'><b>DrMobNumber</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.PopUpOk()'><b>PopUpOk</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.ViewReferal()'><b>ViewReferal</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>10</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.InvestigationClick()'><b>InvestigationClick</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.CreateRquisition()'><b>CreateRquisition</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.CreateReceipt()'><b>CreateReceipt</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>27</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.UploadReport()'><b>UploadReport</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.NewRequisition()'><b>NewRequisition</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.DischargeSummary1()'><b>DischargeSummary1</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Link()'><b>Link</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>15</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.DocumentOn3()'><b>DocumentOn3</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.UploadCamOk2()'><b>UploadCamOk2</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.CreatedBy3()'><b>CreatedBy3</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Feverpanel()'><b>Feverpanel</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.DrMobileNumber()'><b>DrMobileNumber</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>10</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Gallery3()'><b>Gallery3</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.HealthCondition()'><b>HealthCondition</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Preview1()'><b>Preview1</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>12</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.photo()'><b>photo</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>10</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Upload3()'><b>Upload3</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.OtherReasons()'><b>OtherReasons</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>4</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Preview()'><b>Preview</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>35</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.DocumentOn1()'><b>DocumentOn1</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Save()'><b>Save</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>15</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.SelectTests()'><b>SelectTests</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.LinkPatient()'><b>LinkPatient</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>18</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Certificate()'><b>Certificate</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>40</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.UploadOk3()'><b>UploadOk3</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>8</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.SearchDr()'><b>SearchDr</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>17</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.DocumentsDropDown1()'><b>DocumentsDropDown1</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>5</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.SpecialVaccine()'><b>SpecialVaccine</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>21</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.DocumentOn()'><b>DocumentOn</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.Speciality()'><b>Speciality</b><br>Test class: pivotalApplication.PivoFin2</td>
 <td></td>
 <td>7</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
 <tr>
-<td title='healthApp.HealthChat.CameraAllow1()'><b>CameraAllow1</b><br>Test class: healthApp.HealthChat</td>
+<td title='pivotalApplication.PivoFin2.Camera2()'><b>Camera2</b><br>Test class: pivotalApplication.PivoFin2</td>
 <td></td>
-<td>7</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
+<td>19</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
 <tr>
-<td title='healthApp.HealthChat.TypeMessage()'><b>TypeMessage</b><br>Test class: healthApp.HealthChat</td>
+<td title='pivotalApplication.PivoFin2.close1()'><b>close1</b><br>Test class: pivotalApplication.PivoFin2</td>
 <td></td>
-<td>7</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
+<td>10</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
 <tr>
-<td title='healthApp.HealthChat.OkClick()'><b>OkClick</b><br>Test class: healthApp.HealthChat</td>
+<td title='pivotalApplication.PivoFin2.popUpOk2()'><b>popUpOk2</b><br>Test class: pivotalApplication.PivoFin2</td>
 <td></td>
-<td>7</td>
-<td>healthApp.HealthChat@68c9133c</td></tr>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.proceedButton()'><b>proceedButton</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>5</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
+<tr>
+<td title='pivotalApplication.PivoFin2.IAgree()'><b>IAgree</b><br>Test class: pivotalApplication.PivoFin2</td>
+<td></td>
+<td>2</td>
+<td>pivotalApplication.PivoFin2@1040be71</td></tr>
 </table><p>
 </body>
 </html>

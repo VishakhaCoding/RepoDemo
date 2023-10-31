@@ -97,7 +97,7 @@ public void Search() throws InterruptedException {
 	Thread.sleep(2000);
 
 	WebElement SearchBar =  driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-	SearchBar.sendKeys("PivoTotal40Automation");
+	SearchBar.sendKeys("PivoTotal72Automation");
 
 	Thread.sleep(2000);
 	WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
@@ -388,7 +388,7 @@ public void Gallery3() throws InterruptedException, IndexOutOfBoundsException {
 @Test(priority = 31)
 public void photo3() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(10000);
- driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"Screenshot_20230807-103653_Gallery.jpg, 680 kB, 7 Aug\"]")).click();
+ driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"Screenshot_20230921-114316_Gallery.jpg, 704 kB, 21 Sep\"]")).click();
 
 	
 
@@ -507,7 +507,9 @@ public void preview() throws InterruptedException, IndexOutOfBoundsException {
 	WebElement Save
 	  = driver.findElement(By.xpath("//*[@text='Save']"));
 	 Save.click();
-  
+	 Thread.sleep(10000);
+	 //driver.navigate().refresh();
+	 
   }
  
 	/*
@@ -634,7 +636,7 @@ public void UploadCamOk() throws InterruptedException, IndexOutOfBoundsException
 }
 @Test(priority = 53)
 public void UploadDocuments1() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(2000);
+	Thread.sleep(5000);
 	WebElement UploadDocuments1
 	  =driver.findElement(By.xpath("//*[@text='Upload Documents']"));
 	UploadDocuments1.click();
@@ -711,7 +713,7 @@ public void Gallery() throws InterruptedException, IndexOutOfBoundsException {
 @Test(priority = 60)
 public void photo() throws InterruptedException, IndexOutOfBoundsException {
 	Thread.sleep(10000);
- driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"Screenshot_20230807-103653_Gallery.jpg, 680 kB, 7 Aug\"]")).click();
+ driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"Screenshot_20230921-114316_Gallery.jpg, 704 kB, 21 Sep\"]")).click();
 
 	
 
@@ -737,7 +739,7 @@ public void UploadOk() throws InterruptedException, IndexOutOfBoundsException {
 }
 @Test(priority = 63)
 public void SpecialVaccine() throws InterruptedException, IndexOutOfBoundsException {
-	Thread.sleep(2000);
+	Thread.sleep(5000);
 	driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Link Patient to Doctor\").instance(0))"));
 	Thread.sleep(10000);
 	WebElement SpecialVaccine

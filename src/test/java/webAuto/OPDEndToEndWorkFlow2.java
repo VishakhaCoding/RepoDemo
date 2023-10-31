@@ -58,11 +58,11 @@ public class OPDEndToEndWorkFlow2 {
 	public static String ConfirmVaccinationDate = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/button";
 	public static String VaccineRecord = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/patient-immunization/div/mat-tab-group/div/mat-tab-body[1]/div/div/div/table/tbody/tr[2]/td[8]/div";
 	public static String RecievedDate = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/div/img";
-	public static String ClickDate = "//*[text()='2']";
+	public static String ClickDate = "//*[text()='3']";
 	public static String SaveVaccine = "//*[text()='Save Vaccine']";
 	public static String SpecialVaccineClick = "//*[text()='Special Vaccines']";
 	public static String CholeraVacccine = "//*[text()='Meningococcal Vaccine']";
-	public static String SelectDate1 = "//*[text()='2']";
+	public static String SelectDate1 = "//*[text()='3']";
 	public static String ClickCalender = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[4]/div/img";
 	public static String SaveSpecialVaccine = "//*[text()='Save Vaccine']";
 	public static String ReceiptOption = "//*[text()='Bill/Receipt']";
@@ -229,7 +229,7 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	@Test(priority = 4)
 	public void searchBar1() {
 		waitForVisibilityOf(By.xpath(searchBar));
-		driver.findElement(By.xpath(searchBar)).sendKeys("Vopdtest");
+		driver.findElement(By.xpath(searchBar)).sendKeys("Dopdtest");
 		highlightElement(By.xpath(searchBar));
 		clickUsingJavaScript(By.xpath(searchBar));
 	}
