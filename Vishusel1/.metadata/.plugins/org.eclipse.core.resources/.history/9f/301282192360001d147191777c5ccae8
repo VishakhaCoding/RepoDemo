@@ -1,0 +1,131 @@
+package SampCo;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class dmLaunchC {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","H:\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("https://opd.copious.care/");
+		
+		//wait
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		
+		
+		
+		//for valid input
+		
+		
+		  driver.findElement(By.xpath(
+		  "/html/body/app-root/app-home-page/div/div/div/section/div[2]/div[1]/div/div[1]/div[1]/div[1]/input")).sendKeys("Vishakha"); driver.findElement(By.xpath(
+		  "/html/body/app-root/app-home-page/div/div/div/section/div[2]/div[1]/div/div[1]/div[1]/div[2]/input"
+		  )).sendKeys("9665002440");
+		  
+		  driver.findElement(By.xpath(
+		  "/html/body/app-root/app-home-page/div/div/div/section/div[2]/div[1]/div/div[1]/div[2]/div[1]/input"
+		  )).sendKeys("xyz");
+		  
+		  driver.findElement(By.xpath(
+		  "/html/body/app-root/app-home-page/div/div/div/section/div[2]/div[1]/div/div[1]/div[2]/div[2]/input"
+		  )).sendKeys("123");
+		  
+		 
+		
+		//for invalid output
+		  //driver.findElement(By.xpath("/html/body/app-root/app-home-page/div/div/div/section/div[2]/div[1]/div/div[1]/div[1]/div[1]/input")).sendKeys("abc"); 
+			/*
+			 * driver.findElement(By.xpath(
+			 * "/html/body/app-root/app-home-page/div/div/div/section/div[2]/div[1]/div/div[1]/div[1]/div[2]/input"
+			 * )).sendKeys("9665002440");
+			 * 
+			 * driver.findElement(By.xpath(
+			 * "/html/body/app-root/app-home-page/div/div/div/section/div[2]/div[1]/div/div[1]/div[2]/div[1]/input"
+			 * )).sendKeys("xyz");
+			 * 
+			 * driver.findElement(By.xpath(
+			 * "/html/body/app-root/app-home-page/div/div/div/section/div[2]/div[1]/div/div[1]/div[2]/div[2]/input"
+			 * )).sendKeys("123");
+			 * 
+			 */
+		
+		
+		
+		// Find an element and define it for login
+
+		  WebElement elementToClick = driver.findElement(By.xpath("some xpath"));
+		  // Scroll the browser to the element's Y position
+		  ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,"+elementToClick.getLocation().y+")");
+		  // Click the element
+		  elementToClick.click();
+		  
+		  //or
+		  WebDriver driver = new ChromeDriver();
+	        WebElement element = driver.findElement(By.id("ID"));
+	        boolean clicked = false;
+	        do{
+	            try {
+	                element.click();
+	            } catch (WebDriverException e) {
+	                continue;
+	            } finally {
+	                clicked = true;
+	            }
+	        } while (!clicked);
+	
+		
+		//or
+	        from selenium import webdriver
+	        from selenium.webdriver.common.by import By
+	        from selenium.webdriver.support.ui import WebDriverWait
+	        from selenium.webdriver.support import expected_conditions as EC
+
+	        driver.get(url)
+
+	        f = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".PostFull__reply > a")))
+	        f.location_once_scrolled_into_view
+	        f.click() 
+	        If unfortunately f.click() does not work correctly, you can also perform click using execute_script() as below :-
+
+	        driver.execute_script('arguments[0].click()', f)
+	        
+	        
+	        //or
+	        driver.maximize_window()
+	        f = driver.find_element_by_css_selector('.PostFull__reply')
+	        location = f.location["y"] - 100
+	        driver.execute_script("window.scrollTo(0, %d);" %location)
+	        f.click()
+	        
+	        //or
+	        driver.get(url)
+	        sleep(4)
+	        f = driver.find_element_by_css_selector('.PostFull__reply')
+	        f.location_once_scrolled_into_view
+	        f.click()
+	        
+	        
+		
+		//for login button
+		//driver.findElement(By.className("btn-primary opd-secondary-btn btn-md btn-login")).click();
+		//driver.findElement(By.xpath("/html/body/app-root/app-home-page/div/div/div/header[2]/div/div[4]/button")).click();
+		
+		//WebElement a =driver.findElement(By.cssSelector("btn-primary opd-secondary-btn btn-md btn-login"));
+		//a.click();   
+		
+		
+
+	}
+
+}

@@ -1,0 +1,290 @@
+package pivotalApplication;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.remote.MobileCapabilityType;
+
+public class FreshPrescription {
+	AppiumDriver<MobileElement> driver;
+	public Object MobileElement;
+
+	@BeforeClass
+	public void setup() throws MalformedURLException, InterruptedException {
+
+	DesiredCapabilities dc = new DesiredCapabilities();
+	dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
+	dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
+	dc.setCapability(MobileCapabilityType.APP, "D:\\VISHAKHA-app-release.apk");
+	URL url = new URL("http://127.0.0.1:4723/wd/hub");
+	dc.setCapability("appPackage", "com.calculator_apps");
+	dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
+	// AndroidDriver driver = new AndroidDriver(new
+	// URL("http://127.0.0.1:4723/wd/hub"), dc); //Create driver object
+	driver = new AppiumDriver<MobileElement>(url, dc);
+
+	Thread.sleep(5000);
+
+}
+
+@Test(priority = 0)
+public void NumberField() throws MalformedURLException, InterruptedException {
+	WebElement Number = driver.findElementByXPath(
+			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText");
+	Number.sendKeys("9665002440");
+}
+
+@Test(priority = 1)
+public void IAgree() throws MalformedURLException, InterruptedException {
+	WebElement Agree = driver.findElementByXPath("//android.widget.TextView[@index='1']");
+	Agree.click();
+	Thread.sleep(1000);
+}
+
+@Test(priority = 2)
+public void proceedButton() throws MalformedURLException, InterruptedException {
+	MobileElement proceed = driver.findElementByXPath(
+			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView");
+	proceed.click();
+	Thread.sleep(2000);
+}
+
+@Test(priority = 3)
+public void OTP() throws MalformedURLException, InterruptedException {
+	MobileElement otp = driver.findElementByXPath(
+			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.EditText");
+	otp.sendKeys("140520");
+
+	Thread.sleep(10000);
+}
+
+@Test(priority = 4)
+public void submit() throws MalformedURLException, InterruptedException {
+	MobileElement submit = driver.findElementByXPath(
+			"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView");
+	submit.click();
+
+	Thread.sleep(2000);
+
+}
+
+@Test(priority = 5)
+public void Search() throws InterruptedException {
+
+	MobileElement myElement1 = driver
+			.findElementByXPath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView");
+	myElement1.click();
+
+	Thread.sleep(2000);
+
+	MobileElement myElement2 = driver.findElementByXPath("//android.widget.EditText[@content-desc=\"search_bar\"]");
+	myElement2.sendKeys("prescription");
+
+	Thread.sleep(2000);
+	MobileElement myElement3 = driver
+			.findElementByXPath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView");
+	myElement3.click();
+	Thread.sleep(2000);
+
+}
+
+@Test(priority = 6)
+public void close() throws InterruptedException {
+	Thread.sleep(2000);
+	MobileElement myElement4 = driver
+			.findElementByXPath("//android.view.ViewGroup[@content-desc=\"search_close\"]");
+	myElement4.click();
+
+	Thread.sleep(2000);
+
+}
+
+@Test(priority = 7)
+public void ClickPatient() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	List<io.appium.java_client.MobileElement> Clickpatient = driver
+			.findElements(By.className("android.widget.TextView"));
+	Clickpatient.get(5).click();
+
+	// Working code for prescription
+	// List<io.appium.java_client.MobileElement> els2 =
+	// driver.findElements(By.className("android.widget.TextView"));
+	// els2.get(8).click();
+
+}
+
+@Test(priority = 8)
+public void prescription() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	/*
+	 * List<io.appium.java_client.MobileElement> Clickpatient = driver
+	 * .findElements(By.className("android.widget.TextView"));
+	 * Clickpatient.get(32).click();
+	 */
+	MobileElement prescription = driver
+			.findElementByXPath("//*[@text='Prescription']");
+	prescription.click();
+}
+
+  @Test(priority=9) public void DietAndNutrition() throws
+  InterruptedException, IndexOutOfBoundsException{ Thread.sleep(2000);
+  MobileElement DietAndNutrition = driver
+			.findElementByXPath("//*[@text='Diet & Nutrition']");
+  DietAndNutrition.click();
+
+}
+  @Test(priority=10) public void DietAndNutritionAdd() throws
+  InterruptedException, IndexOutOfBoundsException{ Thread.sleep(2000);
+  List<io.appium.java_client.MobileElement> DietAndNutritionAdd =
+		  driver.findElements(By.className("android.widget.TextView"));
+		  DietAndNutritionAdd.get(23).click();
+  
+}
+  @Test(priority=11) public void DietAdvice() throws InterruptedException,
+  IndexOutOfBoundsException{ Thread.sleep(2000);
+  
+ 
+  MobileElement DietAdvice = driver
+			.findElementByXPath("//*[@text='Balanced diet']");
+  DietAdvice.click();}
+
+  @Test(priority=12) public void AddDietAdvice() throws InterruptedException,
+  IndexOutOfBoundsException{ Thread.sleep(2000);
+  
+  MobileElement DietAdvice = driver
+			.findElementByXPath("//*[@text='Add Dietary Advice']");
+DietAdvice.click();
+  
+  
+ }
+ 
+
+@Test(priority = 13)
+public void GeneralInstructions() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+
+	  MobileElement GeneralInstructions = driver
+				.findElementByXPath("//*[@text='General Instructions']");
+	  GeneralInstructions.click();
+}
+
+@Test(priority = 14)
+public void GeneralInstructionsAdd() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	List<io.appium.java_client.MobileElement> GeneralInstructionsAdd = driver
+			.findElements(By.className("android.widget.TextView"));
+	GeneralInstructionsAdd.get(28).click();
+	
+}
+
+@Test(priority = 15)
+public void InstructionsAdd() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+
+	MobileElement InstructionsAdd = driver
+			.findElementByXPath("//*[@text='Doodh halad']");
+	InstructionsAdd.click();
+}
+
+@Test(priority = 16)
+public void Instructions() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+
+	MobileElement Instructions = driver
+			.findElementByXPath("//*[@text='Add Instructions']");
+	Instructions.click();
+}
+
+@Test(priority = 17)
+public void NextFollowup() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+	MobileElement NextFollowup = driver
+			.findElementByXPath("//*[@text='Next Followup']");
+	NextFollowup.click();
+}
+
+@Test(priority = 18)
+public void NextFollowupClnder() throws InterruptedException, IndexOutOfBoundsException {
+
+	MobileElement NextFollowupclear = driver
+			.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.ScrollView/android.widget.EditText");
+	NextFollowupclear.clear();
+	Thread.sleep(2000);
+
+	MobileElement NextFollowupClnder = driver
+			.findElementByXPath("//android.widget.TextView[@index='7']");
+	NextFollowupClnder.click();
+}
+
+/*
+ * @Test(priority=42) public void calenderDrpdwn() throws InterruptedException,
+ * IndexOutOfBoundsException{ Thread.sleep(2000);
+ * 
+ * 
+ * List<io.appium.java_client.MobileElement> calenderDrpdwn =
+ * driver.findElements(By.className("android.widget.TextView"));
+ * calenderDrpdwn.get(1).click(); }
+ * 
+ * @Test(priority=43) public void calenderDrpdwnDate() throws
+ * InterruptedException, IndexOutOfBoundsException{ Thread.sleep(2000);
+ * 
+ * 
+ * List<io.appium.java_client.MobileElement> calenderDrpdwnDate =
+ * driver.findElements(By.className("android.widget.TextView"));
+ * calenderDrpdwnDate.get(4).click(); }
+ */
+@Test(priority = 19)
+public void NextOk() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+
+	MobileElement NextOk = driver
+			.findElementByXPath("//*[@text='Ok']");
+	NextOk.click();
+}
+
+@Test(priority = 20)
+public void NextVistTab() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+
+
+	MobileElement NextVistTab = driver
+			.findElementByXPath("//*[@text='Visit']");
+	NextVistTab.click();
+}
+
+@Test(priority = 21)
+public void PreviewPrescription() throws InterruptedException, IndexOutOfBoundsException {
+	Thread.sleep(2000);
+
+	MobileElement PreviewPrescription = driver
+			.findElementByXPath("//*[@text='Preview']");
+	PreviewPrescription.click();
+}
+
+/*
+ * @Test(priority = 22) public void SaveAndShare() throws InterruptedException,
+ * IndexOutOfBoundsException { Thread.sleep(5000);
+ * 
+ * List<io.appium.java_client.MobileElement> SaveAndShare = driver
+ * .findElements(By.className("android.widget.TextView"));
+ * SaveAndShare.get(4).click(); }
+ * 
+ * @Test(priority = 23) public void DownloadPrint() throws InterruptedException,
+ * IndexOutOfBoundsException { Thread.sleep(2000);
+ * 
+ * List<io.appium.java_client.MobileElement> DownloadPrint = driver
+ * .findElements(By.className("android.widget.TextView"));
+ * DownloadPrint.get(8).click(); }
+ */
+}

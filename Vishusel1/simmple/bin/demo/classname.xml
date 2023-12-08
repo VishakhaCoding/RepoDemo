@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SUITE SYSTEM "http:// testing.org/testing-1.0dtd">
+<suite name="suite1">
+<test name="test1">
+<classname=".test">
+</classname>
+</test>
+</suite>
