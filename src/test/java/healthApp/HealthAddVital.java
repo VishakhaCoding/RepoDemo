@@ -19,8 +19,9 @@ import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import pivotalApplication.AppiumServerStart;
 
-public class HealthAddVital {
+public class HealthAddVital extends AppiumServerStart   {
 	AppiumDriver driver;
 	public Object MobileElement;
 //CertificateValid
@@ -30,7 +31,7 @@ public class HealthAddVital {
 	DesiredCapabilities dc = new DesiredCapabilities();
 	dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 	dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
 	dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-release-16-Aug.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
@@ -129,154 +130,129 @@ public void Verify() throws MalformedURLException, InterruptedException {
 
 }
 @Test(priority = 5)
-public void SelectFamilyMember() throws MalformedURLException, InterruptedException {
-
-
-	List<WebElement> SelectFamilyMember =driver.findElements(By.className(
-			"android.view.ViewGroup"));
+public void AddButton2() throws MalformedURLException, InterruptedException {
+	/*
+	 * List<WebElement> BackArrow =
+	 * driver.findElements(By.className("android.widget.TextView"));
+	 * BackArrow.get(0).click();
+	 */
+	Thread.sleep(10000);
+	List<WebElement> SelectFamilyMember = driver.findElements(By.className("android.view.ViewGroup"));
 	SelectFamilyMember.get(8).click();
 
-	
-	  Thread.sleep(5000);
+	Thread.sleep(5000);
 
-}
-@Test(priority = 6)
-public void AddButton() throws MalformedURLException, InterruptedException {
-	
-
-	List<WebElement> AddButton =driver.findElements(By.className(
-			"android.widget.TextView"));
+	List<WebElement> AddButton = driver.findElements(By.className("android.widget.TextView"));
 	AddButton.get(78).click();
 
-	
-	  Thread.sleep(5000);
+	Thread.sleep(5000);
 
 }
-@Test(priority = 7)
-public void AllVisits() throws MalformedURLException, InterruptedException {
-	
 
-	List<WebElement> AllVisits =driver.findElements(By.xpath(
-			"//*[@text='All Visits']"));
+@Test(priority = 6)
+public void AllVisits() throws MalformedURLException, InterruptedException {
+
+	List<WebElement> AllVisits = driver.findElements(By.xpath("//*[@text='All Visits']"));
 	AllVisits.get(0).click();
 
-	
-	  Thread.sleep(5000);
+	Thread.sleep(5000);
 
 }
-@Test(priority = 8)
-public void AddVitalsClick() throws MalformedURLException, InterruptedException {
-	
 
-	List<WebElement> AddVitalsClick =driver.findElements(By.xpath(
-			"//*[@text='Add Vitals']"));
+@Test(priority = 7)
+public void AddVitalsClick() throws MalformedURLException, InterruptedException {
+
+	List<WebElement> AddVitalsClick = driver.findElements(By.xpath("//*[@text='Add Vitals']"));
 	AddVitalsClick.get(0).click();
 
-	
-	  Thread.sleep(5000);
+	Thread.sleep(5000);
 
 }
-@Test(priority = 9)
-public void AddVitals() throws MalformedURLException, InterruptedException {
-	
 
-	List<WebElement> Weight =driver.findElements(By.xpath(
-			"//*[@text='WT. (kg)']"));
+@Test(priority = 8)
+public void AddVitals() throws MalformedURLException, InterruptedException {
+
+	List<WebElement> Weight = driver.findElements(By.xpath("//*[@text='WT. (kg)']"));
 	Weight.get(0).sendKeys("5");
-	
-	
-	List<WebElement> height =driver.findElements(By.xpath(
-			"//*[@text='HT. (cm)']"));
+
+	List<WebElement> height = driver.findElements(By.xpath("//*[@text='HT. (cm)']"));
 	height.get(0).sendKeys("100");
-	
-	List<WebElement> Temperature =driver.findElements(By.xpath(
-			"//*[@text='Temp. (F)']"));
+
+	List<WebElement> Temperature = driver.findElements(By.xpath("//*[@text='Temp. (F)']"));
 	Temperature.get(0).sendKeys("98");
-	
-	
-	
-	  List<WebElement> SPO2 =driver.findElements(By.xpath( "//*[@text='SPO2']"));
-	  SPO2.get(1).sendKeys("100");
-	 
-	
-	List<WebElement> Haemoglobin =driver.findElements(By.xpath(
-			"//*[@text='Haemoglobin']"));
+
+	List<WebElement> SPO2 = driver.findElements(By.xpath("//*[@text='SPO2']"));
+	SPO2.get(1).sendKeys("100");
+
+	List<WebElement> Haemoglobin = driver.findElements(By.xpath("//*[@text='Haemoglobin']"));
 	Haemoglobin.get(1).sendKeys("12");
-	
-	List<WebElement> BPSys =driver.findElements(By.xpath(
-			"//*[@text='BP (Sys)']"));
+
+	List<WebElement> BPSys = driver.findElements(By.xpath("//*[@text='BP (Sys)']"));
 	BPSys.get(1).sendKeys("70");
-	
-	List<WebElement> BPDia =driver.findElements(By.xpath(
-			"//*[@text='BP (Dia)']"));
+
+	List<WebElement> BPDia = driver.findElements(By.xpath("//*[@text='BP (Dia)']"));
 	BPDia.get(1).sendKeys("70");
-	
-	List<WebElement> HeartRate =driver.findElements(By.xpath(
-			"//*[@text='Heart Rate']"));
+
+	List<WebElement> HeartRate = driver.findElements(By.xpath("//*[@text='Heart Rate']"));
 	HeartRate.get(1).sendKeys("72");
-	
-	
+
 	System.out.println("Before scrolling ....");
-	driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(false).instance(0)).scrollIntoView(new UiSelector().textContains(\"Save\").instance(0))"));
+	driver.findElement(AppiumBy.androidUIAutomator(
+			"new UiScrollable(new UiSelector().scrollable(false).instance(0)).scrollIntoView(new UiSelector().textContains(\"Save\").instance(0))"));
+	// Thread.sleep(10000);
+	// driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new
+	// UiSelector().scrollable(false).instance(0)).scrollIntoView(new
+	// UiSelector().textContains(\"Lipid Profile\").instance(0))"));
 	Thread.sleep(10000);
-	
-	
-	List<WebElement> Pulse =driver.findElements(By.xpath(
-			"//*[@text='Pulse']"));
+
+	List<WebElement> Pulse = driver.findElements(By.xpath("//*[@text='Pulse']"));
 	Pulse.get(1).sendKeys("78");
-	
-	List<WebElement> BloodSugarR =driver.findElements(By.xpath(
-			"//*[@text='Blood Sugar (Random)']"));
+
+	List<WebElement> BloodSugarR = driver.findElements(By.xpath("//*[@text='Blood Sugar (Random)']"));
 	BloodSugarR.get(1).sendKeys("300");
-	
-	List<WebElement> BloodSugarf =driver.findElements(By.xpath(
-			"//*[@text='Bloodsugar (F)']"));
+
+	List<WebElement> BloodSugarf = driver.findElements(By.xpath("//*[@text='Bloodsugar (F)']"));
 	BloodSugarf.get(1).sendKeys("200");
-	
-	List<WebElement> BloodSugarPP =driver.findElements(By.xpath(
-			"//*[@text='Bloodsugar (PP)']"));
+
+	List<WebElement> BloodSugarPP = driver.findElements(By.xpath("//*[@text='Bloodsugar (PP)']"));
 	BloodSugarPP.get(1).sendKeys("250");
-	
-	List<WebElement> BloodSugarHB =driver.findElements(By.xpath(
-			"//*[@text='Blood (HbA1c)']"));
+
+	List<WebElement> BloodSugarHB = driver.findElements(By.xpath("//*[@text='Blood (HbA1c)']"));
 	BloodSugarHB.get(1).sendKeys("250");
 
-	
-	  Thread.sleep(5000);
+	Thread.sleep(5000);
 
 }
-@Test(priority = 10)
+
+@Test(priority = 9)
 public void LipidProfile() throws MalformedURLException, InterruptedException {
-	
 
-	List<WebElement> LipidArrow =driver.findElements(By.xpath(
-			"//*[@text='Lipid Profile']"));
+	List<WebElement> LipidArrow = driver.findElements(By.xpath("//*[@text='Lipid Profile']"));
 	LipidArrow.get(0).click();
-	
-	List<WebElement> CholestrolHDL =driver.findElements(By.xpath(
-			"//*[@text='Cholesterol (HDL)']"));
+
+	List<WebElement> CholestrolHDL = driver.findElements(By.xpath("//*[@text='Cholesterol (HDL)']"));
 	CholestrolHDL.get(1).sendKeys("110");
-	
-	List<WebElement> CholestrolLDL =driver.findElements(By.xpath(
-			"//*[@text='Cholesterol (LDL)']"));
+
+	List<WebElement> CholestrolLDL = driver.findElements(By.xpath("//*[@text='Cholesterol (LDL)']"));
 	CholestrolLDL.get(1).sendKeys("120");
-	
+
 	System.out.println("Before scrolling ....");
-	driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Total Cholesterol\").instance(0))"));
+	driver.findElement(AppiumBy.androidUIAutomator(
+			"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Total Cholesterol\").instance(0))"));
 	Thread.sleep(10000);
-	
-	List<WebElement> TotalCholesterol =driver.findElements(By.xpath(
-			"//*[@text='Total Cholesterol']"));
+
+	List<WebElement> TotalCholesterol = driver.findElements(By.xpath("//*[@text='Total Cholesterol']"));
 	TotalCholesterol.get(1).sendKeys("140");
-	
-	List<WebElement> Tryglycerides =driver.findElements(By.xpath(
-			"//*[@text='Triglycerides']"));
+
+	List<WebElement> Tryglycerides = driver.findElements(By.xpath("//*[@text='Triglycerides']"));
 	Tryglycerides.get(1).sendKeys("140");
-	
-	List<WebElement> Save =driver.findElements(By.xpath(
-			"//*[@text='Save']"));
+
+	List<WebElement> Save = driver.findElements(By.xpath("//*[@text='Save']"));
 	Save.get(0).click();
+
+	Thread.sleep(5000);
 }
+
 //@AfterClass public void close() throws IOException {
 		@AfterMethod
 		public void screenShot(ITestResult result) { // using ITestResult.FAILURE is equals to result.getStatus then it

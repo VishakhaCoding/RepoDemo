@@ -6,6 +6,7 @@
 		<project>practice</project>
 		<project>Servers</project>
 		<project>simmple</project>
+		<project>TestAutomation</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

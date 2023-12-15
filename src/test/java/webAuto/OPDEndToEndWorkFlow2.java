@@ -58,11 +58,11 @@ public class OPDEndToEndWorkFlow2 {
 	public static String ConfirmVaccinationDate = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/button";
 	public static String VaccineRecord = "/html/body/app-root/app-layout/ng-sidebar-container/div/div/div/app-new-profile/div[2]/patient-immunization/div/mat-tab-group/div/mat-tab-body[1]/div/div/div/table/tbody/tr[2]/td[8]/div";
 	public static String RecievedDate = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[5]/div/img";
-	public static String ClickDate = "//*[text()='3']";
+	public static String ClickDate = "//*[text()='1']";
 	public static String SaveVaccine = "//*[text()='Save Vaccine']";
 	public static String SpecialVaccineClick = "//*[text()='Special Vaccines']";
 	public static String CholeraVacccine = "//*[text()='Meningococcal Vaccine']";
-	public static String SelectDate1 = "//*[text()='3']";
+	public static String SelectDate1 = "//*[text()='1']";
 	public static String ClickCalender = "/html/body/div[2]/div[2]/div/mat-dialog-container/div[2]/div[4]/div/img";
 	public static String SaveSpecialVaccine = "//*[text()='Save Vaccine']";
 	public static String ReceiptOption = "//*[text()='Bill/Receipt']";
@@ -156,8 +156,8 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		// driver.get("http://stage.copious.care:4200/");
-		// driver.manage().window().fullscreen();
+		 //driver.get("http://stage.copious.care:4200/");
+		 driver.manage().window().fullscreen();
 		driver.get("https://app.copious.care/");
 		//driver.get("https://opd.copious.care/");
 		 //driver.get("https://stage.copious.care/");
@@ -229,7 +229,7 @@ public static String BrandName="//*[text()='Tubaervac BCG']";
 	@Test(priority = 4)
 	public void searchBar1() {
 		waitForVisibilityOf(By.xpath(searchBar));
-		driver.findElement(By.xpath(searchBar)).sendKeys("Dopdtest");
+		driver.findElement(By.xpath(searchBar)).sendKeys("Mopdtest");
 		highlightElement(By.xpath(searchBar));
 		clickUsingJavaScript(By.xpath(searchBar));
 	}
@@ -837,25 +837,25 @@ Thread.sleep(5000);
 	}
 
 	// @AfterClass public void close() throws IOException {
-	@AfterMethod
-	public void screenShot(ITestResult result) { // using ITestResult.FAILURE is equals to result.getStatus then it
-		// enter into if condition
-		if (ITestResult.FAILURE == result.getStatus()) {
-			try { // To create reference of TakesScreenshot
-				EventFiringWebDriver edriver = new EventFiringWebDriver(driver); // Call method to capture screenshot
-				File src = edriver.getScreenshotAs(OutputType.FILE); // Copy files to specific location
-				// result.getName() will return name of test case so that screenshot name will
-				// be same as test case name
-				FileUtils.copyFile(src, new File("C:\\ScreenShotFolder\\" + result.getName() + ".png"));
-				System.out.println("Successfully captured a screenshot"); // driver.quit();
-			} catch (Exception e) {
-				System.out.println("Exception while taking screenshot " + e.getMessage());
+		@AfterMethod
+		public void screenShot(ITestResult result) { // using ITestResult.FAILURE is equals to result.getStatus then it
+			// enter into if condition
+			if (ITestResult.FAILURE == result.getStatus()) {
+				try { // To create reference of TakesScreenshot
+					EventFiringWebDriver edriver = new EventFiringWebDriver(driver); // Call method to capture screenshot
+					File src = edriver.getScreenshotAs(OutputType.FILE); // Copy files to specific location
+					// result.getName() will return name of test case so that screenshot name will
+					// be same as test case name
+					FileUtils.copyFile(src, new File("C:\\ScreenShotFolder\\" + result.getName() + ".png"));
+					System.out.println("Successfully captured a screenshot"); // driver.quit();
+				} catch (Exception e) {
+					System.out.println("Exception while taking screenshot " + e.getMessage());
 
-				// driver.quit();
-				// Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T"); }
+					// driver.quit();
+					// Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T"); }
 
+				}
 			}
 		}
-	}
 
-}
+	}

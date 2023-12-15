@@ -1,6 +1,5 @@
 package pivotalApplication;
 
-
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -9,35 +8,24 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
-
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-
-
 import io.appium.java_client.AppiumDriver;
-//import io.appium.java_client.FindsByAndroidUIAutomator;
-//import io.appium.java_client.MobileElement;
-//import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
+public class PivotalChatAppointment {
+	AppiumDriver driver;
+	public Object MobileElement;
+	public static String mobileNumber = "//*[@text='Cancel']";
 
-
-
-public class PivotalLogIn {
-	
-		AppiumDriver driver;
-		public Object MobileElement;
-
-		@BeforeClass
-		public void setup() throws MalformedURLException, InterruptedException {
+	@BeforeClass
+	public void setup() throws MalformedURLException, InterruptedException {
 
 		DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
@@ -45,6 +33,7 @@ public class PivotalLogIn {
 		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
 		dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+		//dc.setCapability(MobileCapabilityType.APP, "D:\\pivoapp-prod-16-nov.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
 		dc.setCapability("appPackage", "com.calculator_apps");
 		dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
@@ -55,7 +44,7 @@ public class PivotalLogIn {
 		Thread.sleep(5000);
 
 	}
-
+	
 	@Test(priority = 0)
 	public void NumberField() throws MalformedURLException, InterruptedException {
 		WebElement Number = driver.findElement(By.xpath(
@@ -92,45 +81,92 @@ public class PivotalLogIn {
 		WebElement submit = driver.findElement(By.xpath(
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
 		submit.click();
-
+		Thread.sleep(5000);
+		List<WebElement> WhatsNewClose = driver.findElements(By.className("android.widget.TextView"));
+		WhatsNewClose.get(1).click();
 		Thread.sleep(2000);
-		
-		//Thread.sleep(2000);
-		 List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
-		  WhatsNewClose.get(1).click();
+
+	}
+	  @Test(priority=5) public void chatsclick() throws InterruptedException {
 		  Thread.sleep(2000);
+		  
+				  
+				//working code for vdo call checkbox
+				  
+				 WebElement chatsclick =driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"chat_menu\"]"));
+				 chatsclick.click();
+		  
+		 // WebElement Appointmentclick =driver.findElement(By.id("appointment_menu_id"));
+		 // Appointmentclick.click();
+		  
+		  Thread.sleep(5000);
+			
+		  
+		  }
+	  @Test(priority=6) public void Patientclick() throws InterruptedException {
+		  Thread.sleep(2000);
+		  
+				  
+				//working code for vdo call checkbox
+				  
+				 WebElement Patientclick =driver.findElement(By.xpath("//*[@text='GovVcc Test']"));
+				 Patientclick.click();
+		  
+		 // WebElement Appointmentclick =driver.findElement(By.id("appointment_menu_id"));
+		 // Appointmentclick.click();
+		  
+		  Thread.sleep(5000);
+			
+		  
+		  }
+	  @Test(priority=7) public void AppointmentClick() throws InterruptedException {
+		  Thread.sleep(2000);
+		  
+				  
+				//working code for vdo call checkbox
+				  
+				 WebElement AppointmentClick =driver.findElement(By.xpath("//*[@text='']"));
+				 AppointmentClick.click();
+		  
+		 // WebElement Appointmentclick =driver.findElement(By.id("appointment_menu_id"));
+		 // Appointmentclick.click();
+		  
+		  Thread.sleep(5000);
+		  
+		  WebElement From =driver.findElement(By.xpath("//*[@text='From']"));
+		  From.click();
+		  Thread.sleep(5000);
+		  
+		  WebElement Evening =driver.findElement(By.xpath("//*[@text='Evening Session  49 /  54']"));
+		  Evening.click();
+			
+  Thread.sleep(5000);
+		  
+		  WebElement Time =driver.findElement(By.xpath("//*[@text='04:00 pm']"));
+		  Time.click();
+		  }
+		@Test(priority = 8)
+		public void Book() throws InterruptedException {
+			Thread.sleep(2000);
 
-	}
+			 WebElement BookAP = driver.findElement(By.xpath("//*[@text='Book Appointment']"));
+			 BookAP.click();
+			Thread.sleep(5000);
 
-	@Test(priority = 5)
-	public void Search() throws InterruptedException {
+		}
 
-		WebElement SearchIcon = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
-		SearchIcon.click();
+		@Test(priority = 9)
+		public void AppointmentBookedPopup() throws InterruptedException {
+			Thread.sleep(2000);
 
-		Thread.sleep(2000);
+			
 
-		WebElement SearchBar = driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"search_bar\"]"));
-		SearchBar.sendKeys("pedi41Automation");
+			List<WebElement> AppointmentBookedPopup = driver.findElements(By.className("android.widget.TextView"));
+			AppointmentBookedPopup.get(2).click();
 
-		Thread.sleep(2000);
-		WebElement SearchIcon1 = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
-		SearchIcon1.click();
-		Thread.sleep(2000);
+			Thread.sleep(5000);
 
-	}
-
-	@Test(priority = 6)
-	public void close() throws InterruptedException {
-		Thread.sleep(2000);
-		WebElement close = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_close\"]"));
-		close.click();
-
-		Thread.sleep(2000);
-
-	}
-	 
-	// @AfterClass public void close() throws IOException {
+		}
 		@AfterMethod
 		public void screenShot(ITestResult result) { // using ITestResult.FAILURE is equals to result.getStatus then it
 			// enter into if condition
@@ -151,6 +187,5 @@ public class PivotalLogIn {
 				}
 			}
 		}
-	}
 
-
+}

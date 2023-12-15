@@ -36,9 +36,9 @@ public class PriorityAppointment {
 	DesiredCapabilities dc=new DesiredCapabilities();
 	dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 	dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
-	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-2-nov-production.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage","com.calculator_apps");
 	dc.setCapability("appActivity","com.calculator_apps.MainActivity");
@@ -81,7 +81,7 @@ public class PriorityAppointment {
 			 )); submit.click();
 			
 			
-			  Thread.sleep(2000);
+			  Thread.sleep(5000);
 			  List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
 			  WhatsNewClose.get(1).click();
 			  Thread.sleep(2000);
@@ -115,17 +115,26 @@ public class PriorityAppointment {
 
 	  @Test(priority=6) public void close() throws InterruptedException {
 		  Thread.sleep(2000);
-		  WebElement close= driver.findElement(By.xpath(
-	  "//android.view.ViewGroup[@content-desc=\"search_close\"]" ));
-	  close.click();
-	  
-	  Thread.sleep(2000);
+			/*
+			 * WebElement close= driver.findElement(By.xpath(
+			 * "//android.view.ViewGroup[@content-desc=\"search_close\"]" )); close.click();
+			 * 
+			 * Thread.sleep(2000);
+			 */
 	  
 	  }
 	  @Test(priority=7) public void Appointment() throws InterruptedException, IndexOutOfBoundsException{
 		  Thread.sleep(2000);
-		  List<WebElement> Appointment = driver.findElements(By.className("android.widget.TextView"));
-		  Appointment.get(7).click();	
+		 // List<WebElement> Appointment = driver.findElements(By.className("android.widget.TextView"));
+		  //Appointment.get(7).click();	
+		  
+		  List<WebElement> Clickpatient = driver
+					.findElements(By.className("android.widget.TextView"));
+			Clickpatient.get(5).click();
+			 Thread.sleep(5000);
+		  
+		  List<WebElement> Appointment = driver.findElements(By.className("android.view.ViewGroup"));
+		  Appointment.get(0).click();	
 		
 			//Working code for prescription 
 		 // List<io.appium.java_client.MobileElement> els2 = driver.findElements(By.className("android.widget.TextView"));

@@ -20,10 +20,10 @@ import org.testng.annotations.Test;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class PivoFin1 {
+public class PivoFin1 extends AppiumServerStart {
 	AppiumDriver driver;
 	public Object MobileElement;
-	public static String mobileNumber = "//*[@text='Cancel']";
+	
 
 	@BeforeClass
 	public void setup() throws MalformedURLException, InterruptedException {
@@ -31,9 +31,14 @@ public class PivoFin1 {
 		DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
-		dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
+		//dc.setCapability(MobileCapabilityType.APP, "D:\\z");
+		dc.setCapability("–session-override",true);
+		//dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 1200);
+		dc.setCapability("noReset", false) ;
+		dc.setCapability(MobileCapabilityType.APP, "D:\\pivoapp-prod-16-nov.apk");
+		//dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-vishakha-8-Dec.apk");
 		URL url = new URL("http://0.0.0.0:4723/");
 		dc.setCapability("appPackage", "com.calculator_apps");
 		dc.setCapability("appActivity", "com.calculator_apps.MainActivity");
@@ -81,7 +86,7 @@ public class PivoFin1 {
 		WebElement submit = driver.findElement(By.xpath(
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.TextView"));
 		submit.click();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		List<WebElement> WhatsNewClose = driver.findElements(By.className("android.widget.TextView"));
 		WhatsNewClose.get(1).click();
 		Thread.sleep(2000);
@@ -93,7 +98,8 @@ public class PivoFin1 {
 		Thread.sleep(2000);
 
 		List<WebElement> Createptient = driver.findElements(By.className("android.widget.TextView"));
-		Createptient.get(14).click();
+		//Createptient.get(14).click();
+		Createptient.get(36).click();
 
 		Thread.sleep(2000);
 
@@ -137,7 +143,7 @@ public class PivoFin1 {
 		Thread.sleep(2000);
 
 		WebElement MobileNumber1 = driver.findElement(By.xpath("//*[@text='Mobile Number']"));
-		MobileNumber1.sendKeys("1000000034");
+		MobileNumber1.sendKeys("1000000035");
 
 	}
 
@@ -182,8 +188,8 @@ public class PivoFin1 {
 		Thread.sleep(2000);
 
 		WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-		FirstName.sendKeys("PivoTotal72Automation");
-
+		FirstName.sendKeys("PivoTotal118Automations");
+		//FirstName.sendKeys("abhaPatient1Dec");
 		Thread.sleep(2000);
 
 	}
@@ -821,39 +827,68 @@ public class PivoFin1 {
 		List<WebElement> Backward1 = driver.findElements(By.className("android.widget.TextView"));
 		Backward1.get(0).click();
 		Thread.sleep(10000);
-		List<WebElement> Appointment = driver.findElements(By.className("android.widget.TextView"));
-		Appointment.get(7).click();
+		
+		/*
+		 * WebElement SearchIcon1 = driver.findElement(By.xpath(
+		 * "//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"
+		 * )); SearchIcon1.click();
+		 *
+		 */
+		List<WebElement> Appointment = driver.findElements(By.xpath("//*[@text='Appointments']"));
+		Appointment.get(0).click();
+	
+	
+		
+	
 
 	}
 
 	@Test(priority = 80)
 	public void SlotTime() throws InterruptedException {
 		Thread.sleep(10000);
-		List<WebElement> SlotTime = driver.findElements(By.className("android.widget.EditText"));
+		List<WebElement> EveArrow = driver.findElements(By.xpath("//*[@text='Evening Session']"));
 
-		SlotTime.get(2).click();
+		EveArrow.get(0).click();
+		
+		Thread.sleep(5000);
+		List<WebElement> SlotTime = driver.findElements(By.xpath("//*[@text='03:50 pm']"));
+		//List<WebElement> SlotTime = driver.findElements(By.className("android.widget.TextView"));
+		//SlotTime.get(30).click();
+		SlotTime.get(0).click();
+		Thread.sleep(5000);
+		List<WebElement> SelectPatient = driver.findElements(By.xpath("//*[@text='Select Patient']"));
+		SelectPatient.get(0).click();
+		Thread.sleep(5000);
+		List<WebElement> Seatchbar = driver.findElements(By.xpath("//*[@text='Name / Mobile']"));
+		Seatchbar.get(0).sendKeys("PivoTotal118Automations");
+		Thread.sleep(5000);
+		List<WebElement> Search = driver.findElements(By.className("android.widget.TextView"));
+		Search.get(1).click();
+		Thread.sleep(5000);
+		List<WebElement> Patient = driver.findElements(By.className("android.widget.TextView"));
+		Patient.get(3).click();
+		
+		Thread.sleep(5000);
 
 	}
 
-	@Test(priority = 81)
-	public void Time() throws InterruptedException {
-		Thread.sleep(2000);
-		List<WebElement> Time = driver.findElements(By.className("android.widget.TextView"));
-
-		Time.get(10).click();
-
-	}
-
-	@Test(priority = 82)
-	public void SlotBook() throws InterruptedException {
-		Thread.sleep(2000);
-		List<WebElement> SlotBook = driver.findElements(By.className("android.widget.TextView"));
-
-		// SlotBook.get(36).click();//11;40
-		SlotBook.get(9).click(); // 11:10
-
-	}
-
+	/*
+	 * @Test(priority = 81) public void Time() throws InterruptedException {
+	 * Thread.sleep(2000); List<WebElement> Time =
+	 * driver.findElements(By.className("android.widget.TextView"));
+	 * 
+	 * Time.get(10).click();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 82) public void SlotBook() throws InterruptedException {
+	 * Thread.sleep(2000); List<WebElement> SlotBook =
+	 * driver.findElements(By.className("android.widget.TextView"));
+	 * 
+	 * // SlotBook.get(36).click();//11;40 SlotBook.get(9).click(); // 11:10
+	 * 
+	 * }
+	 */
 	@Test(priority = 83)
 	public void VideoCheckBox() throws InterruptedException {
 		Thread.sleep(2000);
@@ -884,13 +919,18 @@ public class PivoFin1 {
 		List<WebElement> Backward = driver.findElements(By.className("android.widget.TextView"));
 		Backward.get(0).click();
 		Thread.sleep(5000);
+		
+		Thread.sleep(2000);
+		WebElement SearchIcon1 =  driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"search_icon\"]/android.widget.TextView"));
+		SearchIcon1.click();
 	}
 
 	@Test(priority = 86)
 	public void ClickPatient() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(2000);
 		List<WebElement> Clickpatient = driver.findElements(By.className("android.widget.TextView"));
-		Clickpatient.get(5).click();
+		Clickpatient.get(4).click();
+		Clickpatient.get(4).click();
 	}
 
 	@Test(priority = 87)
@@ -1326,22 +1366,27 @@ public class PivoFin1 {
 		VaccineLabel.click();
 		Thread.sleep(2000);
 		// driver.findElement(By.xpath("//*[@text='Ok']")).click();
+		
+		WebElement Camera
+
+		= driver.findElement(By.xpath("//*[@text='While using the app']"));
+Camera.click();
+Thread.sleep(2000);
 
 		Thread.sleep(2000);
-		WebElement allow
+		/*
+		 * WebElement allow
+		 * 
+		 * = driver.findElement(By.xpath("//*[@text='Allow']")); allow.click();
+		 * 
+		 * WebElement allow1
+		 * 
+		 * = driver.findElement(By.xpath("//*[@text='Allow']")); allow1.click();
+		 * Thread.sleep(2000); ;
+		 */
 
-				= driver.findElement(By.xpath("//*[@text='Allow']"));
-		allow.click();
-
-		WebElement allow1
-
-				= driver.findElement(By.xpath("//*[@text='Allow']"));
-		allow1.click();
 		Thread.sleep(2000);
-		;
-
-		Thread.sleep(2000);
-		WebElement CameraClick = driver.findElement(By.xpath("//CenterButtonGroup[@content-desc=\"NONE\"]"));
+		WebElement CameraClick = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Take picture\"]"));
 		CameraClick.click();
 
 		Thread.sleep(10000);
@@ -1508,7 +1553,7 @@ public class PivoFin1 {
 	public void GallariesPhoto() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(
-				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20230921-114316_Gallery.jpg, 704 kB, 21 Sep\"]"))
+				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20231214-124051_Gallery.jpg, 829 kB, 14 Dec\"]"))
 				.click();
 
 		Thread.sleep(5000);
@@ -1560,6 +1605,12 @@ public class PivoFin1 {
 				= driver.findElement(By.xpath("//*[@text='Camera']"));
 		Camera.click();
 		Thread.sleep(2000);
+		
+		//WebElement Camera1
+
+	/*	= driver.findElement(By.xpath("//*[@text='While using the app']"));
+Camera1.click();
+Thread.sleep(2000);*/
 
 		/*
 		 * WebElement allow
@@ -1575,7 +1626,7 @@ public class PivoFin1 {
 		 */
 
 		Thread.sleep(5000);
-		WebElement CameraClick = driver.findElement(By.xpath("//CenterButtonGroup[@content-desc=\"NONE\"]"));
+		WebElement CameraClick = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Take picture\"]"));
 		CameraClick.click();
 
 		Thread.sleep(5000);
@@ -1711,6 +1762,12 @@ public class PivoFin1 {
 				= driver.findElement(By.xpath("//*[@text='Camera']"));
 		Camera.click();
 		Thread.sleep(2000);
+		
+		//WebElement Camera2
+
+		/*= driver.findElement(By.xpath("//*[@text='While using the app']"));
+Camera2.click();
+Thread.sleep(2000);*/
 		/*
 		 * WebElement allow
 		 * 
@@ -1723,7 +1780,7 @@ public class PivoFin1 {
 		 * 
 		 * Thread.sleep(2000);
 		 */
-		WebElement CameraClick = driver.findElement(By.xpath("//CenterButtonGroup[@content-desc=\"NONE\"]"));
+		WebElement CameraClick = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Take picture\"]"));
 		CameraClick.click();
 
 		Thread.sleep(5000);
@@ -1801,7 +1858,7 @@ public class PivoFin1 {
 	public void photo() throws InterruptedException, IndexOutOfBoundsException {
 		Thread.sleep(10000);
 		driver.findElement(By.xpath(
-				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20230921-114316_Gallery.jpg, 704 kB, 21 Sep\"]"))
+				"//android.widget.LinearLayout[@content-desc=\"Screenshot_20231214-124051_Gallery.jpg, 829 kB, 14 Dec\"]"))
 				.click();
 
 	}

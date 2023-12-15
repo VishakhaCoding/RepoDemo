@@ -18,8 +18,9 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import pivotalApplication.AppiumServerStart;
 
-public class HealthFamily {
+public class HealthFamily extends AppiumServerStart {
 	AppiumDriver driver;
 	public Object MobileElement;
 //CertificateValid
@@ -29,7 +30,7 @@ public class HealthFamily {
 	DesiredCapabilities dc = new DesiredCapabilities();
 	dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 	dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
 	dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-release-16-Aug.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
@@ -39,7 +40,7 @@ public class HealthFamily {
 	// URL("http://127.0.0.1:4723/wd/hub"), dc); //Create driver object
 	driver = new AppiumDriver(url, dc);
 
-	Thread.sleep(5000);
+	Thread.sleep(10000);
 
 }
 

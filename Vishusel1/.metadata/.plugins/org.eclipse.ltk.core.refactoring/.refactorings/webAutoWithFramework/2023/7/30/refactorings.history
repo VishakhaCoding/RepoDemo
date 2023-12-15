@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;webAuto.PreviousDateReceipt&apos; to &apos;PreviDateReceipt&apos;&#x0D;&#x0A;- Original project: &apos;webAutoWithFramework&apos;&#x0D;&#x0A;- Original element: &apos;webAuto.PreviousDateReceipt&apos;&#x0D;&#x0A;- Renamed element: &apos;webAuto.PreviDateReceipt&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PreviousDateReceipt&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;webAuto{PreviousDateReceipt.java[PreviousDateReceipt" matchStrategy="1" name="PreviDateReceipt" qualified="false" references="true" similarDeclarations="false" stamp="1690283816324" textual="false" version="1.0"/>
-</session>

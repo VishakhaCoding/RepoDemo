@@ -1,25 +1,19 @@
 package healthApp;
 
-import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class BookLabTest {
+public class NewAppoitnment {
 	AppiumDriver driver;
 	public Object MobileElement;
 //CertificateValid
@@ -31,7 +25,8 @@ public class BookLabTest {
 	dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
-	dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-release-16-Aug.apk");
+	//dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-release-16-Aug.apk");
+	dc.setCapability(MobileCapabilityType.APP, "D:\\healthapp-Stage-24-Nov.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
 	dc.setCapability("appPackage", "com.calculator_parent_apps");
 	dc.setCapability("appActivity", "com.calculator_parent_apps.MainActivity");
@@ -124,128 +119,156 @@ public void Verify() throws MalformedURLException, InterruptedException {
 
 
 	
-	  Thread.sleep(5000);
+	  Thread.sleep(10000);
 
 }
 @Test(priority = 5)
-public void SelectFamilyMember() throws MalformedURLException, InterruptedException {
+public void BookAppointment() throws MalformedURLException, InterruptedException {
+	/*
+	 * List<WebElement> AddFamilyMember =driver.findElements(By.className(
+	 * "android.widget.TextView")); AddFamilyMember.get(34).click();
+	 */
 
-
-	List<WebElement> SelectFamilyMember =driver.findElements(By.className(
-			"android.view.ViewGroup"));
-	SelectFamilyMember.get(8).click();
+	List<WebElement> BookAppointment =driver.findElements(By.xpath(
+			"//*[@text='Book Appointment']"));
+	BookAppointment.get(0).click();
 
 	
 	  Thread.sleep(5000);
 
 }
 @Test(priority = 6)
-public void AddButton() throws MalformedURLException, InterruptedException {
+public void SelectFamilyMember() throws MalformedURLException, InterruptedException {
 	
-
-	List<WebElement> AddButton =driver.findElements(By.className(
-			"android.widget.TextView"));
-	AddButton.get(78).click();
+	List<WebElement> SelectFamilyMember =driver.findElements(By.className(
+			"android.view.ViewGroup"));
+	SelectFamilyMember.get(15).click();
 
 	
-	  Thread.sleep(5000);
+	  Thread.sleep(2000);
 
 }
 @Test(priority = 7)
-public void BookLabTest11() throws MalformedURLException, InterruptedException {
+public void SelectDoctor() throws MalformedURLException, InterruptedException {
 	
-
-	List<WebElement> BookLabTest =driver.findElements(By.xpath(
-			"//*[@text='Book Lab Test']"));
-	BookLabTest.get(0).click();
+	List<WebElement> SelectDoctor =driver.findElements(By.xpath(
+			"//*[@text='Select Doctor']"));
+	SelectDoctor.get(0).click();
 
 	
 	  Thread.sleep(5000);
 
 }
 @Test(priority = 8)
-public void SelectLab() throws MalformedURLException, InterruptedException {
+public void Doctor() throws MalformedURLException, InterruptedException {
 	
 
-	List<WebElement> SelectLab =driver.findElements(By.xpath(
-			"//*[@text='Select Lab']"));
-	SelectLab.get(0).click();
+	List<WebElement> Doctor =driver.findElements(By.xpath(
+			"//*[@text='Dr. Vishakha  Nawale ']"));
+	Doctor.get(0).click();
 
 	
 	  Thread.sleep(5000);
 
 }
 @Test(priority = 9)
-public void ClickLab() throws MalformedURLException, InterruptedException {
-	
+public void DateClick() throws MalformedURLException, InterruptedException {
 
-	List<WebElement> ClickLab =driver.findElements(By.xpath(
-			"//*[@text='Uday_P_Labs']"));
-	ClickLab.get(0).click();
+
+	List<WebElement> DateClick =driver.findElements(By.xpath(
+			"//*[@text='DD/MM/YYYY']"));
+	DateClick.get(0).click();
 
 	
 	  Thread.sleep(5000);
 
 }
 @Test(priority = 10)
-public void Comments() throws MalformedURLException, InterruptedException {
+public void Time() throws MalformedURLException, InterruptedException {
 	
 
-	List<WebElement> Comments =driver.findElements(By.xpath(
-			"//*[@text='Enter Comments']"));
-	Comments.get(0).sendKeys("Test");
+	List<WebElement> Time =driver.findElements(By.xpath("//*[@text='05:30 pm']"
+			));
+	Time.get(0).click();
 
 	
 	  Thread.sleep(5000);
 
 }
 @Test(priority = 11)
-public void VaccineLabel() throws InterruptedException, IndexOutOfBoundsException {
+public void PurposeVisit() throws MalformedURLException, InterruptedException {
+	List<WebElement> NewVisit =driver.findElements(By.xpath(
+			"//*[@text='New Visit']"));
+	NewVisit.get(0).clear();
+	
+	 Thread.sleep(2000);
+	List<WebElement> AddVisit =driver.findElements(By.xpath(
+			"//*[@text='󰐙']"));
+	AddVisit.get(0).click();
+	 Thread.sleep(2000);
+	 
+	 List<WebElement> Followup =driver.findElements(By.xpath(
+				"//*[@text='Follow Up']"));
+	 Followup.get(0).click();
+		 Thread.sleep(2000); 
+		 
+		 List<WebElement> CfAdd =driver.findElements(By.xpath(
+					"//*[@text='󰐙']"));
+		 CfAdd.get(1).click();
+			 Thread.sleep(2000); 
+			 
+			 List<WebElement> CfFever =driver.findElements(By.xpath(
+						"//*[@text='Fever']"));
+			 CfFever.get(0).click();
+				 Thread.sleep(2000); 
+				 
+				 List<WebElement> CfSince =driver.findElements(By.className(
+							"android.widget.EditText"));
+				 CfSince.get(1).sendKeys("1");
+					 Thread.sleep(2000);
+					 
+					 List<WebElement> CfMild =driver.findElements(By.xpath(
+								"//*[@text='Mild']"));
+					 CfMild.get(0).click();
+						 Thread.sleep(2000);
+						 
+						 List<WebElement> CfVomitting =driver.findElements(By.xpath(
+									"//*[@text='Vomitting']"));
+						 CfVomitting.get(0).click();
+							 Thread.sleep(2000);
+							 
+							 
+							 List<WebElement> CfSince1 =driver.findElements(By.className(
+										"android.widget.EditText"));
+							 CfSince1.get(1).sendKeys("1");
+								 Thread.sleep(2000);
+							 
+							 List<WebElement> CfAddComplains =driver.findElements(By.xpath(
+										"//*[@text='Add Complaints']"));
+							 CfAddComplains.get(0).click();
+								 Thread.sleep(2000);
+		 
+		 
+	 
+	 
+	 
+	 
+	
 
-	Thread.sleep(5000);
-	WebElement VaccineLabel = driver.findElement(By.xpath("//*[@text='Upload test requisition from your doctor']"));
-	VaccineLabel.click();
-	Thread.sleep(2000);
-	// driver.findElement(By.xpath("//*[@text='Ok']")).click();
+	
 
-	Thread.sleep(2000);
-	WebElement allow
-
-			= driver.findElement(By.xpath("//*[@text='Allow']"));
-	allow.click();
-
-	WebElement allow1
-
-			= driver.findElement(By.xpath("//*[@text='Allow']"));
-	allow1.click();
-	Thread.sleep(2000);
-	;
-
-	Thread.sleep(2000);
-	WebElement CameraClick = driver.findElement(By.xpath("//CenterButtonGroup[@content-desc=\"NONE\"]"));
-	CameraClick.click();
-
-	Thread.sleep(5000);
-
-	WebElement UploadOk = driver.findElement(By.xpath("//*[@text='OK']"));
-	UploadOk.click();
-
-	Thread.sleep(2000);
-
-	/*
-	 * WebElement Submit = driver.findElement(By.xpath("//*[@text='Submit']"));
-	 * Submit.click();
-	 */
+	
+	  Thread.sleep(5000);
 
 }
 
 
-  @Test(priority = 12) public void BookLabTest1() throws MalformedURLException,
-  InterruptedException {
+  @Test(priority = 12) public void CreateAppointment() throws
+  MalformedURLException, InterruptedException {
   
   
-  List<WebElement> BookLabTest1 =driver.findElements(By.xpath(
-  "//*[@text='Book Lab Test']")); BookLabTest1.get(1).click();
+  List<WebElement> CreateAppointment =driver.findElements(By.xpath(
+  "//*[@text='Create Appointment']")); CreateAppointment.get(1).click();
   
   
   Thread.sleep(5000);
@@ -255,7 +278,6 @@ public void VaccineLabel() throws InterruptedException, IndexOutOfBoundsExceptio
 @Test(priority = 13)
 public void Done() throws MalformedURLException, InterruptedException {
 	
-
 	List<WebElement> Done =driver.findElements(By.xpath(
 			"//*[@text='Done']"));
 	Done.get(0).click();
@@ -264,26 +286,5 @@ public void Done() throws MalformedURLException, InterruptedException {
 	  Thread.sleep(5000);
 
 }
-//@AfterClass public void close() throws IOException {
-		@AfterMethod
-		public void screenShot(ITestResult result) { // using ITestResult.FAILURE is equals to result.getStatus then it
-			// enter into if condition
-			if (ITestResult.FAILURE == result.getStatus()) {
-				try { // To create reference of TakesScreenshot
-					EventFiringWebDriver edriver = new EventFiringWebDriver(driver); // Call method to capture screenshot
-					File src = edriver.getScreenshotAs(OutputType.FILE); // Copy files to specific location
-					// result.getName() will return name of test case so that screenshot name will
-					// be same as test case name
-					FileUtils.copyFile(src, new File("C:\\ScreenShotFolder\\" + result.getName() + ".png"));
-					System.out.println("Successfully captured a screenshot"); // driver.quit();
-				} catch (Exception e) {
-					System.out.println("Exception while taking screenshot " + e.getMessage());
-
-					// driver.quit();
-					// Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T"); }
-
-				}
-			}
-		}
 
 }

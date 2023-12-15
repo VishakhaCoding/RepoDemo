@@ -23,7 +23,7 @@ public class PivotalLogout{
 	DesiredCapabilities dc = new DesiredCapabilities();
 	dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 	dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
 	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
 	URL url = new URL("http://0.0.0.0:4723/");

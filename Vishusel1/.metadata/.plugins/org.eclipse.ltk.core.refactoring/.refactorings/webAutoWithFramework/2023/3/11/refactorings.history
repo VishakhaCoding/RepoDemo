@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;pivotalApplication.Eample&apos; to &apos;Example&apos;&#x0D;&#x0A;- Original project: &apos;webAutoWithFramework&apos;&#x0D;&#x0A;- Original element: &apos;pivotalApplication.Eample&apos;&#x0D;&#x0A;- Renamed element: &apos;pivotalApplication.Example&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Eample&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;pivotalApplication{Eample.java[Eample" matchStrategy="1" name="Example" qualified="false" references="true" similarDeclarations="false" stamp="1678696652784" textual="false" version="1.0"/>
-</session>

@@ -25,7 +25,7 @@ import org.testng.annotations.Test;
   try { prop = new Properties();
   
   FileInputStream ip = new FileInputStream( System.getProperty("user.dir") +
-  "/src/main/java/com/webauto" + "/config/config.properties"); prop.load(ip); }
+  "/src/main/java" + "/com.webauto.config/config.properties"); prop.load(ip); }
   catch (FileNotFoundException e) { e.printStackTrace(); } catch (IOException
   e) { e.printStackTrace(); } }
   

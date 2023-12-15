@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class LMPAddPivo {
+public class LMPAddPivo extends AppiumServerStart {
 	static AppiumDriver driver;
 	 public Object MobileElement;
 	 
@@ -35,7 +35,7 @@ public class LMPAddPivo {
 	DesiredCapabilities dc=new DesiredCapabilities();
 	dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 	dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
 	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
@@ -80,7 +80,7 @@ public class LMPAddPivo {
 			 )); submit.click();
 			
 			
-			  Thread.sleep(2000);
+			  Thread.sleep(5000);
 			  List<WebElement> WhatsNewClose =  driver.findElements(By.className("android.widget.TextView"));
 			  WhatsNewClose.get(1).click();
 			  
@@ -92,7 +92,7 @@ public class LMPAddPivo {
 			
 
 			List<WebElement> Createptient = driver.findElements(By.className("android.widget.TextView"));
-			Createptient.get(14).click();
+			Createptient.get(36).click();
 
 			Thread.sleep(2000);
 
@@ -210,7 +210,7 @@ Close1.get(8).click();
 			
 
 			WebElement FirstName = driver.findElement(By.xpath("//*[@text='First Name']"));
-			 FirstName.sendKeys("LMP44VAutomation");
+			 FirstName.sendKeys("LMP72VAutomation");
 			
 
 
@@ -376,36 +376,40 @@ Close1.get(8).click();
 	  @Test(priority = 24)
 		public void AddVital() throws InterruptedException {
 		 
-			/*
-			 * WebElement AddVital =
-			 * driver.findElement(By.xpath("//*[@text='Add Vitals']")); AddVital.click();
-			 */
+			
+			  WebElement AddVital =
+			  driver.findElement(By.xpath("//*[@text='Add Vitals']")); AddVital.click();
+			 
 	  
-	  WebElement Done = driver.findElement(By.xpath("//*[@text='Done']"));
-	  Done.click();
+			/*
+			 * WebElement Done = driver.findElement(By.xpath("//*[@text='Done']"));
+			 * Done.click();
+			 */
 	  Thread.sleep(5000);
 
 }
 	  @Test(priority = 25)
 		public void Continue() throws InterruptedException {
 		 
-	  WebElement Continue = driver.findElement(By.xpath("//*[@text='Continue']"));
-	  Continue.click();
-	  Thread.sleep(5000);
-	  
-		List<WebElement> EditVital = driver
-	  			.findElements(By.className("android.widget.TextView"));
-	  	//EditVital.get(6).click();
-		EditVital.get(23).click();
-	  	//EditVital.get(25).click();
-	  	//EditVital.get(26).click();
-	  	//EditVital.get(27).click();
-	  	// Working code for prescription
-	  	// List<io.appium.java_client.MobileElement> els2 =
-	  	// driver.findElements(By.className("android.widget.TextView"));
-	  	// els2.get(8).click();
-		Thread.sleep(5000);
-
+			
+			  WebElement Continue = driver.findElement(By.xpath("//*[@text='Continue']"));
+				Continue.click();
+				Thread.sleep(5000); /*
+									 * WebElement Done = driver.findElement(By.xpath("//*[@text='Done']"));
+									 * Done.click(); Thread.sleep(5000);
+									 */
+			  
+				/*
+				 * List<WebElement> EditVital = driver
+				 * .findElements(By.className("android.widget.TextView"));
+				 * //EditVital.get(6).click(); EditVital.get(23).click();
+				 * //EditVital.get(25).click(); //EditVital.get(26).click();
+				 * //EditVital.get(27).click(); // Working code for prescription //s
+				 * List<io.appium.java_client.MobileElement> els2 = //
+				 * driver.findElements(By.className("android.widget.TextView")); //
+				 * els2.get(8).click(); Thread.sleep(5000);
+				 */
+			 
 }
 	  @Test(priority = 26)
 			public void weight() throws InterruptedException {
@@ -538,6 +542,8 @@ Close1.get(8).click();
 	  
 	  List<WebElement> BAArrowDown =  driver.findElements(By.className("android.widget.TextView"));
 	  BAArrowDown.get(24).click();
+	  
+	  Thread.sleep(5000);
 }
 
 /*

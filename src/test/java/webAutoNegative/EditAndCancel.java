@@ -192,7 +192,7 @@ public class EditAndCancel {
 			
 			
 			waitForVisibilityOf(By.xpath(searchBar));
-			driver.findElement(By.xpath(searchBar)).sendKeys("Dopdtest");
+			driver.findElement(By.xpath(searchBar)).sendKeys("Mopdtest");
 			highlightElement(By.xpath(searchBar));
 			clickUsingJavaScript(By.xpath(searchBar));
 		}
@@ -206,7 +206,7 @@ public class EditAndCancel {
 			clickUsingJavaScript(By.xpath(searchOpt));
 		}
 
-		  @Test(priority = 6) public void clickPatient() throws InterruptedException {
+		@Test(priority = 6) public void clickPatient() throws InterruptedException {
 		  Thread.sleep(10000);
 		  
 		  waitForVisibilityOf(By.cssSelector(clickPatient));

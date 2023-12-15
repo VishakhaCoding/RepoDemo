@@ -29,7 +29,7 @@ public class PivoVaccineInventory {
 	DesiredCapabilities dc = new DesiredCapabilities();
 	dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 	dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+	dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME, "samsung");
 	dc.setCapability(MobileCapabilityType.APP, "D:\\pivotalapp-20-june.apk");
 	URL url = new URL("http://0.0.0.0:4723/");
@@ -125,7 +125,38 @@ public void NewStock() throws InterruptedException {
 	  Thread.sleep(2000);
 
 }
- 
+@Test(priority = 9)
+public void SearchBrand() throws InterruptedException {
+	
+	Thread.sleep(2000);
+	
+	  List<WebElement> SearchBrand =  driver.findElements(By.xpath("//*[@text='Search by brand or company']"));
+	  SearchBrand.get(0).click();
+	  Thread.sleep(2000);
+	  
+	  List<WebElement> clickBrand =  driver.findElements(By.xpath("//*[@text='Easy Six (Chiron Panacea)']"));
+	  clickBrand.get(0).click();
+	  Thread.sleep(2000);
+	  
+	  List<WebElement> Quantity =  driver.findElements(By.className("android.widget.EditText"));
+	  Quantity.get(1).clear();
+	  Quantity.get(1).sendKeys("6");
+	  Thread.sleep(2000);
+	  
+	  List<WebElement> Save =  driver.findElements(By.xpath("//*[@text='Save']"));
+	  Save.get(0).click();
+	  Thread.sleep(5000);
+}
+
+@Test(priority = 10)
+public void SearchBrandOrCompany() throws InterruptedException {
+
+	List<WebElement> SearchBrand =  driver.findElements(By.xpath("//*[@text='Search by brand or company']"));
+	  SearchBrand.get(0).sendKeys("Easy Six");
+	
+	
+	
+}
  
 // @AfterClass public void close() throws IOException {
 	@AfterMethod
