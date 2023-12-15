@@ -1,0 +1,25 @@
+package demo;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class xpath {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","H:\\chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		driver.get("http://demowebshop.tricentis.com/");
+		//Absolute xpath
+		//driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a")).click();
+		
+		//Relative xpath
+		driver.findElement(By.xpath("//a[@ class='ico-login']")).click();
+		driver.findElement(By.xpath("//input[@id='Email']")).sendKeys("priyankadhote10@gmail.com");
+		driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("pawan150985");
+		driver.findElement(By.xpath("//input[@class='button-1 login-button']")).click();
+
+	}
+
+}
